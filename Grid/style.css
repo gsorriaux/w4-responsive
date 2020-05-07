@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+}
+
+.yellow{
+    grid-area: yellow;
+    background-color: yellow;
+}
+.red{
+    grid-area: red;
+    background-color: red;
+}
+.green{
+    grid-area: green;
+    background-color: green;
+
+}
+.blue{
+    grid-area: blue;
+    background-color: blue;
+
+}
+.beige{
+    grid-area: beige;
+    background-color: beige;
+
+}
+@media screen and (max-width: 1050px) {
+    .container{
+        height: 100%;
+        display: grid;
+        grid-template-areas: 'yellow yellow yellow'
+                            'red red red'
+                            'green blue blue'
+                            'green beige beige';
+    }
+}
+@media screen and (min-width: 1050px) {
+    .container{
+        height: 100%;
+        display: grid;
+        grid-template-areas: 'yellow yellow yellow red red red'
+                            'blue blue beige beige green green';
+    }
+}
+@media screen and (min-width: 750px) {
+    .containerDesk{
+        height: 100%;
+        display: grid;
+        grid-template-areas: 'green green green green green green'
+                             'blue red red red red red'
+                             'blue yellow yellow yellow beige beige'
+                             'blue yellow yellow yellow beige beige';
+    }
+}
+@media screen and (max-width: 750px) {
+    .containerDesk{
+        height: 100%;
+        display: grid;
+        grid-template-areas: 'beige green blue'
+                             'beige green blue'
+                             'beige red blue'
+                             'beige red yellow';
+}

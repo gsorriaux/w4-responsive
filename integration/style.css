@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Sniglet", cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "Indie Flower", cursive;
+}
+header{
+    background-color: #1ca2f9;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    display: none;
+}
+
+li{
+    margin: 10px;
+}
+.fas{
+    color: white;
+    margin: 10px;
+}
+.logo{
+    margin: 10px;
+}
+.logo p{
+    color: white;
+    font-weight: bold;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.un{
+    background-image: linear-gradient(#0298f9, #FFF);
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+}
+.deux{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.deux h2{
+    color: #0298f9;
+    text-decoration: underline;
+    font-size: 35px;
+}
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 70vh;
+}
+
+.deux p{
+    text-align: center;
+    margin: 10px;
+}
+.trois{
+    background-color: #70cbf4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.badge{
+    background-color: white;
+    color: #1ca2f9;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 15px 2px lightslategray;
+}
+
+@media screen and (max-width: 768px) {
+    .menu{
+        position: fixed;
+        right: 0;
+        list-style: none;
+        color: white;
+        background-color: #1ca2f9;
+        text-align: right;
+    }
+    .portfolio img{
+        height: 30%;
+    }
+}
+@media screen and (min-width: 768px) {
+    .fas{
+        display: none;
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        color: white;
+        font-weight: bold;
+    }
+    .deux{
+        justify-content: center;
+    }
+    .portfolio{
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        height: 40%;
+    }
+    .portfolio img{
+        width: 30%;
+    }
+    .trois{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
